@@ -1,739 +1,111 @@
 [
   {
-    "description": "    Intercation with cart is possible on 2 pages now: Inventory Page and Product Page",
+    "description": "  User delete all products from a cart",
     "elements": [
       {
         "description": "",
-        "id": "interaction-with-cart;user-adds-product-to-cart-from-inventory-page",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "User adds product to cart from Inventory page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 293397781
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 742282539
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 75384580
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I see a product in a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 100796161
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 41005707
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "interaction-with-cart;user-deletes-product-from-a-cart-from-inventory-page",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "User deletes product from a cart from Inventory page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 124075164
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 699234521
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48226358
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I delete a product from a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48092272
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "A cart is empty",
-            "match": {
-              "location": "step-definitions/cart-step.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4824720
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 27127309
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "interaction-with-cart;user-adds-product-to-cart-from-product-page",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "User adds product to cart from Product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 132383406
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 671279463
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I open Product Page",
-            "match": {
-              "location": "step-definitions/cart-step.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 93455384
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55207643
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I see a product in a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4106041
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49251100
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "interaction-with-cart;user-deletes-product-from-a-cart-from-product-page",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "User deletes product from a cart from Product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 135735993
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 774464836
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "I open Product Page",
-            "match": {
-              "location": "step-definitions/cart-step.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 86002478
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 46969362
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I delete a product from a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 49014615
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "A cart is empty",
-            "match": {
-              "location": "step-definitions/cart-step.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5253941
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 21476472
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "interaction-with-cart;user-adds-product-from-inventory-and-deletes-from-a-cart-from-product-page",
-        "keyword": "Scenario",
-        "line": 27,
-        "name": "User adds product from Inventory and deletes from a cart from Product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 175653895
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 732922204
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65754392
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I open Product page",
-            "match": {
-              "location": "step-definitions/product-step.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 338512296
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "I delete a product from a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60495311
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "A cart is empty",
-            "match": {
-              "location": "step-definitions/cart-step.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4891165
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 27390213
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "interaction-with-cart;user-adds-product-from-product-page-and-deletes-from-a-cart-from-inventory-page",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "User adds product from Product Page and deletes from a cart from Inventory page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 238588891
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 731731453
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 34,
-            "name": "I open Product page",
-            "match": {
-              "location": "step-definitions/product-step.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 296215352
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "I add a product to a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48503368
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "I open Inventory page",
-            "match": {
-              "location": "step-definitions/cart-step.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 922379
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "I delete a product from a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 260545999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "A cart is empty",
-            "match": {
-              "location": "step-definitions/cart-step.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11077610
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49671283
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "interaction-with-cart",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Interaction with cart",
-    "tags": [],
-    "uri": "features/cart.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "all-products-page;user-opens-a-product-page-by-clicking-on-a-product-name",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "User opens a product page by clicking on a product name",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 255955182
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 804621354
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I click on product's name",
-            "match": {
-              "location": "step-definitions/inventory-step.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 88337209
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Product page is open",
-            "match": {
-              "location": "step-definitions/inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 34113134
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 44282750
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "all-products-page;user-opens-a-product-page-by-clicking-on-a-photo",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "User opens a product page by clicking on a photo",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 190782132
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 696339625
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I click on product's photo",
-            "match": {
-              "location": "step-definitions/inventory-step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 73630509
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Product page is open",
-            "match": {
-              "location": "step-definitions/inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30216274
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 38726714
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "all-products-page",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "All products page",
-    "tags": [],
-    "uri": "features/inventory.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "product-page;user-goes-back-to-inventory-page",
+        "id": "reset-status-of-an-application;user-reset-application-status",
         "keyword": "Scenario",
         "line": 6,
-        "name": "User goes back to Inventory page",
+        "name": "User reset application status",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 221720837
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "I am logged in",
-            "match": {
-              "location": "step-definitions/inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 656334084
+              "duration": 1446357205
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I open Product page",
+            "name": "I am logged in",
             "match": {
-              "location": "step-definitions/product-step.js:11"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 339908470
+              "duration": 3840110341
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I open Inventory page",
+            "match": {
+              "location": "step-definitions/cart-step.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 913878758
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "I click on a Back Button",
+            "line": 9,
+            "name": "I add a product to a cart",
             "match": {
-              "location": "step-definitions/product-step.js:18"
+              "location": "step-definitions/cart-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 111878021
+              "duration": 660740101
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I see a product in a cart",
+            "match": {
+              "location": "step-definitions/cart-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 612328742
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I open navbar",
+            "match": {
+              "location": "step-definitions/logout-step.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 686749164
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click on ResetApp Button",
+            "match": {
+              "location": "step-definitions/resetApp-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644141600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "I return to Inventory Page",
+            "line": 13,
+            "name": "Cart is empty",
             "match": {
-              "location": "step-definitions/product-step.js:22"
+              "location": "step-definitions/cart-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 8381135
+              "duration": 608924769
             }
           },
           {
@@ -741,19 +113,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39984793
+              "duration": 129840872
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@development",
+            "line": 5
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "product-page",
+    "id": "reset-status-of-an-application",
     "line": 1,
     "keyword": "Feature",
-    "name": "Product page",
+    "name": "Reset Status of an application",
     "tags": [],
-    "uri": "features/product.feature"
+    "uri": "features/resetApp.feature"
   }
 ]

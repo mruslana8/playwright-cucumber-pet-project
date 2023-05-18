@@ -1,5 +1,7 @@
 Feature: Product page
 
+  User opens Product Page where all information about specific item is shown.
+
   Background: 
     When I am logged in
 

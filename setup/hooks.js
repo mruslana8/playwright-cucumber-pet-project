@@ -3,7 +3,7 @@ const { Before, After, BeforeAll, AfterAll } = require('@cucumber/cucumber')
 
 BeforeAll(async () => {
   console.log('Launch Browser')
-  global.browser = await playwright['chromium'].launch({ headless: true})
+  global.browser = await playwright['chromium'].launch({ headless: false, slowMo: 600})
 })
 
 AfterAll(async () => {
