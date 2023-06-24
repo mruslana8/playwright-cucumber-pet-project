@@ -1,9 +1,13 @@
-FROM mcr.microsoft.com/playwright:v1.32.2-focal
+FROM node:latest
 
-RUN mkdir -p /home/app
+FROM mcr.microsoft.com/playwright:focal
 
 WORKDIR /home/app
 
+ENV PATH /home/app/node_modules/.bin:$PATH
+
 COPY . /home/app
+
+RUN npm install
 
 CMD ["npm", "run", "test"]
