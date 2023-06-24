@@ -2,7 +2,6 @@ Feature: Reset Status of an application
 
   User delete all products from a cart
 
-  @development
   Scenario: User reset application status
     Given I am logged in
     Given I open Inventory page

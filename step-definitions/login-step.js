@@ -14,7 +14,7 @@ Then("I should see Inventory page", async function () {
 })
 
 When(
-  /^I fill the login form with "([^"]*)" and "([^"]*)"$/,
+  /^I fill the login form with "([^"]*)" "([^"]*)"$/,
   async function (username, password) {
     await loginPage.submitLoginFormWithParameters(username, password)
   }

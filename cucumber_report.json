@@ -1,111 +1,72 @@
 [
   {
-    "description": "  User delete all products from a cart",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "reset-status-of-an-application;user-reset-application-status",
+        "id": "all-products-page;user-sorts-products-in-the-list-by-name-descending",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "User reset application status",
+        "line": 40,
+        "name": "User sorts products in the list by name descending",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1446357205
+              "duration": 1174934214
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
+            "keyword": "When ",
+            "line": 4,
             "name": "I am logged in",
             "match": {
               "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3840110341
+              "duration": 3278362134
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 33,
             "name": "I open Inventory page",
             "match": {
               "location": "step-definitions/cart-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 913878758
+              "duration": 815538598
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "I add a product to a cart",
+            "line": 34,
+            "name": "I sort products by \"name\" \"descending\"",
             "match": {
-              "location": "step-definitions/cart-step.js:10"
+              "location": "step-definitions/inventory-step.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 660740101
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I see a product in a cart",
-            "match": {
-              "location": "step-definitions/cart-step.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 612328742
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I open navbar",
-            "match": {
-              "location": "step-definitions/logout-step.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 686749164
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I click on ResetApp Button",
-            "match": {
-              "location": "step-definitions/resetApp-step.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 644141600
+              "duration": 652716885
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
-            "name": "Cart is empty",
+            "line": 35,
+            "name": "products are sorted by \"name\" \"descending\"",
             "match": {
-              "location": "step-definitions/cart-step.js:22"
+              "location": "step-definitions/inventory-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 608924769
+              "duration": 35153278
             }
           },
           {
@@ -113,24 +74,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 129840872
+              "duration": 80370651
             }
           }
         ],
         "tags": [
           {
             "name": "@development",
-            "line": 5
+            "line": 31
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "reset-status-of-an-application",
+    "id": "all-products-page",
     "line": 1,
     "keyword": "Feature",
-    "name": "Reset Status of an application",
+    "name": "All products page",
     "tags": [],
-    "uri": "features/resetApp.feature"
+    "uri": "features/inventory.feature"
   }
 ]

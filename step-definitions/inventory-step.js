@@ -25,3 +25,16 @@ When("I click on product's photo", async function () {
 Then("Product page is open", async function () {
   await productPage.assertIsOpen()
 })
+
+When(
+  /^I sort products by "([^"]*)" "([^"]*)"$/,
+  async function (sortBy, typeOfSort) {
+    await inventoryPage.sort(sortBy, typeOfSort)
+  }
+)
+Then(
+  /^products are sorted by "([^"]*)" "([^"]*)"$/,
+  async function (sortBy, typeOfSort) {
+    await inventoryPage.assertSortingIsCorrect(sortBy, typeOfSort)
+  }
+)
